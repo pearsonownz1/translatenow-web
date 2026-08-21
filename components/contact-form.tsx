@@ -12,7 +12,7 @@ export function ContactForm() {
   if (sent) {
     return (
       <div className="mt-12 max-w-md border-y border-hairline py-10">
-        <p className="font-display text-3xl tracking-tight">Noted.</p>
+        <p className="font-display text-3xl">Noted.</p>
         <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
           This form does not deliver a message. No ticket was opened. For a
           price, use the quote form or start an order.

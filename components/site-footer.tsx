@@ -2,19 +2,19 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer className="px-6 pb-16 pt-10 md:px-12 lg:px-16">
+    <footer className="px-6 pb-12 pt-8 md:px-12 lg:px-16">
       <hr className="rule" />
-      <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
         <div>
-          <p className="font-display text-2xl leading-none">TranslateNow</p>
+          <p className="font-display text-[1.3rem] uppercase leading-none tracking-[0.12em]">
+            TranslateNow
+          </p>
           <p className="mt-3 max-w-xs text-[0.9rem] leading-relaxed text-ink/70">
             Certified translations for the filing.
           </p>
         </div>
         <div>
-          <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
-            Product
-          </p>
+          <p className="font-stamp text-ink/45">Product</p>
           <ul className="mt-3 space-y-2 text-[0.9rem]">
             <li>
               <Link href="/certified-translation" className="hover:text-copper">
@@ -54,9 +54,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
-            Filings
-          </p>
+          <p className="font-stamp text-ink/45">Filings</p>
           <ul className="mt-3 space-y-2 text-[0.9rem]">
             <li>
               <Link href="/uscis" className="hover:text-copper">
@@ -96,9 +94,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
-            Desk
-          </p>
+          <p className="font-stamp text-ink/45">Desk</p>
           <ul className="mt-3 space-y-2 text-[0.9rem]">
             <li>
               <Link href="/order" className="hover:text-copper">
@@ -138,9 +134,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
-            Legal
-          </p>
+          <p className="font-stamp text-ink/45">Legal</p>
           <ul className="mt-3 space-y-2 text-[0.9rem]">
             <li>
               <Link href="/terms" className="hover:text-copper">
@@ -159,7 +153,7 @@ export function SiteFooter() {
           </p>
         </div>
       </div>
-      <p className="mt-12 text-[0.75rem] leading-relaxed text-ink/45">
+      <p className="mt-10 text-[0.75rem] leading-relaxed text-ink/45">
         USCIS and IRCC do not approve or endorse translation vendors. A
         certified order includes a signed accuracy statement written to the
         style of 8 CFR 103.2(b)(3) for U.S. filings. Acceptance still depends

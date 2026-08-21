@@ -59,9 +59,9 @@ export default function HowItWorksPage() {
             key={step.n}
             className="grid gap-3 py-8 md:grid-cols-[4rem_minmax(0,1fr)]"
           >
-            <p className="font-display text-2xl text-ink/35">{step.n}</p>
+            <p className="font-stamp text-ink/50">{step.n}</p>
             <div>
-              <h2 className="font-display text-2xl tracking-tight">
+              <h2 className="font-display text-2xl">
                 {step.title}
               </h2>
               <p className="mt-2 text-[1.02rem] leading-relaxed text-ink/70">

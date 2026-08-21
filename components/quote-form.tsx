@@ -13,7 +13,7 @@ export function QuoteForm() {
   if (sent) {
     return (
       <div className="mt-12 max-w-md border-y border-hairline py-10">
-        <p className="font-display text-3xl tracking-tight">Received.</p>
+        <p className="font-display text-3xl">Received.</p>
         <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
           This demo does not send mail or open a job. No document was stored.
           If this were live, we would reply to {email || "the address you entered"}.
