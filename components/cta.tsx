@@ -10,7 +10,7 @@ export function Cta({
   return (
     <Link
       href={href}
-      className="inline-block bg-copper px-6 py-3 text-[0.95rem] font-medium text-paper hover:opacity-90"
+      className="inline-block rounded-none bg-copper px-6 py-3 text-[0.95rem] font-medium uppercase tracking-[0.14em] text-ink hover:bg-ink hover:text-copper"
     >
       {children}
     </Link>

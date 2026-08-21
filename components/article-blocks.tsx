@@ -7,10 +7,10 @@ export function Sections({
   items: { title: string; body: React.ReactNode }[];
 }) {
   return (
-    <div className="mt-16 max-w-2xl divide-y divide-hairline border-y border-hairline">
+    <div className="mt-12 max-w-2xl divide-y divide-hairline border-y border-hairline">
       {items.map((item) => (
-        <section key={item.title} className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">{item.title}</h2>
+        <section key={item.title} className="grid gap-4 py-8 md:grid-cols-2">
+          <h2 className="font-display text-3xl">{item.title}</h2>
           <div className="text-[1.02rem] leading-relaxed text-ink/70">
             {item.body}
           </div>

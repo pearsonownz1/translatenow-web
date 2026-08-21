@@ -10,35 +10,33 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="px-6 pt-8 pb-6 md:px-12 lg:px-16">
-      <div className="flex items-baseline justify-between gap-6">
+    <header className="px-6 pt-5 pb-4 md:px-12 lg:px-16">
+      <div className="flex items-start justify-between gap-6">
         <div>
           <Link
             href="/"
-            className="font-display text-[1.65rem] leading-none tracking-tight text-ink"
+            className="font-display text-[1.3rem] uppercase leading-none tracking-[0.12em] text-ink"
           >
             TranslateNow
           </Link>
-          <p className="mt-2 max-w-[18rem] text-[0.72rem] leading-snug tracking-wide text-ink/55">
-            Certified translations for the filing.
-          </p>
+          <p className="font-stamp mt-2 text-ink/55">Certified translation</p>
         </div>
         <nav
           aria-label="Primary"
-          className="flex flex-wrap items-baseline justify-end gap-x-6 gap-y-2 text-[0.85rem]"
+          className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-[0.72rem] font-medium uppercase tracking-[0.1em]"
         >
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-ink/80 hover:text-ink"
+              className="text-ink/75 hover:text-ink"
             >
               {item.label}
             </Link>
           ))}
         </nav>
       </div>
-      <hr className="rule mt-6" />
+      <hr className="rule mt-4" />
     </header>
   );
 }

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Instrument_Serif } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans, Oswald } from "next/font/google";
 import "./globals.css";
 
-const instrument = Instrument_Serif({
-  weight: "400",
+const oswald = Oswald({
+  weight: ["500", "600"],
   subsets: ["latin"],
-  variable: "--font-instrument",
+  variable: "--font-oswald",
   display: "swap",
 });
 
@@ -13,6 +13,13 @@ const plex = IBM_Plex_Sans({
   weight: ["400", "500"],
   subsets: ["latin"],
   variable: "--font-plex",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
   display: "swap",
 });
 
@@ -39,7 +46,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrument.variable} ${plex.variable}`}>
+    <html
+      lang="en"
+      className={`${oswald.variable} ${plex.variable} ${plexMono.variable}`}
+    >
       <body className="min-h-screen bg-paper text-ink antialiased">
         {children}
       </body>

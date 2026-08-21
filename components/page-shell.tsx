@@ -12,18 +12,14 @@ export function PageShell({
   wide?: boolean;
 }) {
   return (
-    <article className="px-6 pb-24 pt-10 md:px-12 lg:px-16">
-      {kicker ? (
-        <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
-          {kicker}
-        </p>
-      ) : null}
-      <h1 className="mt-4 font-display max-w-[16ch] text-[clamp(2.75rem,7vw,5.75rem)] leading-[0.92] tracking-tight">
+    <article className="px-6 pb-16 pt-8 md:px-12 lg:px-16">
+      {kicker ? <p className="font-stamp text-ink/45">{kicker}</p> : null}
+      <h1 className="mt-3 font-display max-w-[18ch] text-[clamp(2.2rem,6vw,4.4rem)] leading-[0.9] tracking-[-0.02em]">
         {title}
       </h1>
       {lede ? (
         <div
-          className={`mt-8 text-[1.05rem] leading-relaxed text-ink/70 ${wide ? "max-w-xl" : "max-w-md"}`}
+          className={`mt-6 text-[1.05rem] leading-relaxed text-ink/70 ${wide ? "max-w-xl" : "max-w-md"}`}
         >
           {lede}
         </div>

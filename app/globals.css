@@ -1,50 +1,60 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #f3eee6;
-  --color-ink: #161513;
-  --color-copper: #b85a32;
-  --color-hairline: rgb(22 21 19 / 0.12);
-  --font-display: var(--font-instrument), "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --color-paper: #1a1714;
+  --color-ink: #f0e6d4;
+  --color-copper: #e24a1a;
+  --color-hairline: rgb(240 230 212 / 0.2);
+  --font-display: var(--font-oswald), "Oswald", "Arial Narrow", sans-serif;
   --font-sans: var(--font-plex), "IBM Plex Sans", system-ui, sans-serif;
+  --font-stamp: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
 }
 
 html {
-  background: #f3eee6;
-  color: #161513;
+  background: #1a1714;
+  color: #f0e6d4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
 body {
-  background: #f3eee6;
-  color: #161513;
+  background: #1a1714;
+  color: #f0e6d4;
   font-family: var(--font-plex), "IBM Plex Sans", system-ui, sans-serif;
 }
 
 ::selection {
-  background: rgb(184 90 50 / 0.22);
-  color: #161513;
+  background: #e24a1a;
+  color: #f0e6d4;
 }
 
 :focus-visible {
-  outline: 2px solid #b85a32;
+  outline: 2px solid #e24a1a;
   outline-offset: 3px;
 }
 
 .font-display {
-  font-family: var(--font-instrument), "Iowan Old Style", Palatino, serif;
+  font-family: var(--font-oswald), "Oswald", "Arial Narrow", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.font-stamp {
+  font-family: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
   font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .rule {
   border: 0;
-  border-top: 1px solid rgb(22 21 19 / 0.12);
+  border-top: 2px solid rgb(240 230 212 / 0.28);
 }
 
 .copper-underline {
-  border-bottom: 1px solid #b85a32;
+  border-bottom: 2px solid #e24a1a;
 }
 
 input,

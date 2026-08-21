@@ -46,8 +46,8 @@ export function Button({
 }) {
   const cls =
     tone === "copper"
-      ? "inline-block bg-copper px-6 py-3 text-[0.95rem] font-medium text-paper hover:opacity-90 disabled:opacity-40"
-      : "inline-block border border-hairline px-6 py-3 text-[0.95rem] text-ink/80 hover:border-ink/30 disabled:opacity-40";
+      ? "inline-block rounded-none bg-copper px-6 py-3 text-[0.95rem] font-medium uppercase tracking-[0.14em] text-ink hover:bg-ink hover:text-copper disabled:opacity-40"
+      : "inline-block rounded-none border-2 border-hairline px-6 py-3 text-[0.95rem] font-medium uppercase tracking-[0.14em] text-ink/80 hover:border-ink/50 disabled:opacity-40";
   return (
     <button type="button" {...props} className={`${cls} ${props.className ?? ""}`}>
       {children}
