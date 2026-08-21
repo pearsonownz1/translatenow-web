@@ -22,10 +22,10 @@ export function OrderDone() {
   if (!order) {
     return (
       <>
-        <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
+        <p className="font-stamp text-ink/45">
           Order
         </p>
-        <h1 className="mt-4 font-display max-w-[14ch] text-[clamp(2.75rem,7vw,5.75rem)] leading-[0.92] tracking-tight">
+        <h1 className="mt-3 font-display max-w-[18ch] text-[clamp(2.2rem,6vw,4.4rem)] leading-[0.9]">
           No summary in this browser.
         </h1>
         <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-ink/70">
@@ -48,10 +48,10 @@ export function OrderDone() {
 
   return (
     <>
-      <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
+      <p className="font-stamp text-ink/45">
         Demo confirmation
       </p>
-      <h1 className="mt-4 font-display max-w-[14ch] text-[clamp(2.75rem,7vw,5.75rem)] leading-[0.92] tracking-tight">
+      <h1 className="mt-3 font-display max-w-[18ch] text-[clamp(2.2rem,6vw,4.4rem)] leading-[0.9]">
         Nothing was charged.
       </h1>
       <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-ink/70">

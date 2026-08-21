@@ -19,20 +19,20 @@ const tierRows = [
 
 export default function PricingPage() {
   return (
-    <article className="px-6 pb-24 pt-10 md:px-12 lg:px-16">
-      <p className="text-[0.7rem] uppercase tracking-[0.16em] text-ink/45">
+    <article className="px-6 pb-16 pt-8 md:px-12 lg:px-16">
+      <p className="font-stamp text-ink/45">
         Pricing
       </p>
-      <h1 className="mt-4 font-display max-w-[14ch] text-[clamp(3rem,8vw,6.5rem)] leading-[0.92] tracking-tight">
+      <h1 className="mt-3 font-display max-w-[18ch] text-[clamp(2.2rem,6vw,4.4rem)] leading-[0.9]">
         A page is {PAGE_WORDS} words.
       </h1>
-      <p className="mt-8 max-w-md text-[1.05rem] leading-relaxed text-ink/70">
+      <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-ink/70">
         We count the source, not the paper it was printed on. Standard
         turnaround is the next business day. Same-day rush is available on the
         order form.
       </p>
 
-      <dl className="mt-16 max-w-xl divide-y divide-hairline border-y border-hairline">
+      <dl className="mt-12 max-w-xl divide-y divide-hairline border-y border-hairline">
         {tierRows.map((tier) => (
           <div
             key={tier.id}
@@ -52,7 +52,7 @@ export default function PricingPage() {
         ))}
       </dl>
 
-      <h2 className="mt-16 font-display text-3xl tracking-tight">Add-ons</h2>
+      <h2 className="mt-12 font-display text-3xl">Add-ons</h2>
       <dl className="mt-6 max-w-xl divide-y divide-hairline border-y border-hairline">
         <div className="flex items-baseline justify-between gap-6 py-5">
           <dt>
@@ -115,8 +115,8 @@ export default function PricingPage() {
         </Link>
       </div>
 
-      <section className="mt-20 max-w-xl">
-        <h2 className="mb-6 font-display text-3xl tracking-tight">Questions</h2>
+      <section className="mt-14 max-w-xl">
+        <h2 className="mb-5 font-display text-3xl">Questions</h2>
         <Faq
           items={[
             {

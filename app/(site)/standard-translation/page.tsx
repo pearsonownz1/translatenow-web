@@ -19,7 +19,7 @@ export default function StandardPage() {
     >
       <div className="mt-16 max-w-2xl divide-y divide-hairline border-y border-hairline">
         <section className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">When it fits</h2>
+          <h2 className="font-display text-3xl">When it fits</h2>
           <p className="text-[1.02rem] leading-relaxed text-ink/70">
             A letter you want to understand. A web printout. A draft before
             you decide to file. If an officer or clerk asked for a certified
@@ -27,7 +27,7 @@ export default function StandardPage() {
           </p>
         </section>
         <section className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             What you receive
           </h2>
           <p className="text-[1.02rem] leading-relaxed text-ink/70">

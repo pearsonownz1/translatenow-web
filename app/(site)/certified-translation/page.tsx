@@ -19,7 +19,7 @@ export default function CertifiedPage() {
     >
       <div className="mt-16 max-w-2xl divide-y divide-hairline border-y border-hairline">
         <section className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             Who asks for it
           </h2>
           <p className="text-[1.02rem] leading-relaxed text-ink/70">
@@ -32,7 +32,7 @@ export default function CertifiedPage() {
           </p>
         </section>
         <section className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">Three tiers</h2>
+          <h2 className="font-display text-3xl">Three tiers</h2>
           <p className="text-[1.02rem] leading-relaxed text-ink/70">
             Professional {formatUsd(TIERS.professional.price)} — civil
             certificates. Detailed {formatUsd(TIERS.detailed.price)} — longer
@@ -44,7 +44,7 @@ export default function CertifiedPage() {
           </p>
         </section>
         <section className="grid gap-4 py-10 md:grid-cols-2">
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             What it is not
           </h2>
           <p className="text-[1.02rem] leading-relaxed text-ink/70">

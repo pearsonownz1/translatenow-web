@@ -22,7 +22,7 @@ export default function DocumentsPage() {
           <li key={doc.slug} className="py-8">
             <Link href={`/documents/${doc.slug}`} className="group block">
               <div className="flex flex-wrap items-baseline justify-between gap-4">
-                <h2 className="font-display text-3xl tracking-tight group-hover:text-copper">
+                <h2 className="font-display text-3xl group-hover:text-copper">
                   {doc.name}
                 </h2>
                 <p className="text-[0.8rem] text-ink/50">{doc.typicalPages}</p>
@@ -35,7 +35,7 @@ export default function DocumentsPage() {
         ))}
       </ul>
 
-      <h2 className="mt-16 font-display text-3xl tracking-tight">Also common</h2>
+      <h2 className="mt-16 font-display text-3xl">Also common</h2>
       <ul className="mt-6 max-w-xl columns-2 gap-x-10">
         {OTHER_DOCUMENTS.map((name) => (
           <li

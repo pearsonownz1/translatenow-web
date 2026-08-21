@@ -19,7 +19,7 @@ export default function UscisPage() {
     >
       <div className="mt-16 max-w-2xl space-y-10">
         <section>
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             What we put on the statement
           </h2>
           <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
@@ -30,7 +30,7 @@ export default function UscisPage() {
           </p>
         </section>
         <section>
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             What we do not claim
           </h2>
           <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
@@ -41,7 +41,7 @@ export default function UscisPage() {
           </p>
         </section>
         <section>
-          <h2 className="font-display text-3xl tracking-tight">
+          <h2 className="font-display text-3xl">
             Common attachments
           </h2>
           <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
@@ -55,7 +55,7 @@ export default function UscisPage() {
           </p>
         </section>
         <section>
-          <h2 className="font-display text-3xl tracking-tight">Notarization</h2>
+          <h2 className="font-display text-3xl">Notarization</h2>
           <p className="mt-4 text-[1.02rem] leading-relaxed text-ink/70">
             The federal regulation does not require a notary. Some local
             offices and some foreign uses do. Add it only if something in
